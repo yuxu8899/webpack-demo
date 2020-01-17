@@ -15,7 +15,8 @@ module.exports={
     plugins:[htmlPlugin],
     module:{
         rules:[
-            {test:/\.css$/,use:['style-loader','css-loader']}
+            {test:/\.css$/,use:['style-loader','css-loader']},
+            {test:'/\.less$/',user:['style-loader','css-loader','less-loader']}
         ]
     }
 }
